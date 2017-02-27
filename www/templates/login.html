@@ -1,0 +1,15 @@
+<ion-view hide-nav-bar="true">
+<ion-content class="background-login">    
+  <div class="padding-form">
+    <h1 class="title-login">Login</h1>
+    <label class="item-input form-login">
+      <span class="input-label title-form-login">Username</span>
+      <input type="text" placeholder="prenom.nom" ng-model="data.username" required="">
+    </label>
+    <label class="item-input form-login">
+      <span class="input-label title-form-login">Password</span>
+      <input type="password" placeholder="prenom" ng-model="data.password" required="">
+    </label>
+  </div>
+  <button type="submit" class="button button-block login-btn" ng-click="login()">Login</button>
+</ion-content>

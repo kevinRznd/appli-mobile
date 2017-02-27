@@ -1,0 +1,83 @@
+/* Empty. Add your own CSS if you like */
+.header-color 
+{
+	background-color: rgb(40,187,177);
+
+}
+
+.short-map 
+{  
+	height: 200px; 
+}
+
+h1, h2
+{
+	color: black;
+}
+
+.detail-profil
+{
+	text-align: center;
+}
+
+ion-content
+{
+	background-image: url(../img/flou.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-login
+{
+    /*background-image: url(../img/star.jpg);*/
+    background-image: url(https://media0.giphy.com/media/5Zesu5VPNGJlm/giphy.gif),
+        url(https://media0.giphy.com/media/xTiTnJ3BooiDs8dL7W/giphy.gif);
+    background-size: 160% 100% !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.form-login
+{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.title-form-login
+{
+    color: black;
+}
+
+.login-btn
+{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.padding-form
+{
+    padding-top: 50%;
+}
+
+.title-login
+{
+    color: white;
+    text-align: center;
+}
+
+.opacity
+{
+    opacity: 0.6;
+}
+
+.title-dash
+{
+    color: white;
+}
+.button-edit
+{
+    background-color: rgb(40,187,177);
+    color: black;
+}

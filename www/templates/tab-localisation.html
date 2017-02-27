@@ -1,0 +1,26 @@
+<ion-view hide-nav-bar="true">
+    <ion-content class="padding"> 
+      <ion-item>        
+        <map ng-transclude class="short-map" center="map.center">
+          <marker position="marker.position" decimals="marker.decimals"></marker>
+          <points coords="points.coords" options="points.options" events="points.events"></points>
+        </map>
+      </ion-item>
+
+      <div class="list list-inset opacity">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="query">
+        </label>
+      </div>
+      <ion-item class="item-remove-animate item-avatar item-icon-right opacity" ng-repeat="user in users | filter:query" type="item-text-wrap">        
+        <img ng-src="{{user.avatar}}">
+        <h2>{{user.name}} {{user.lastname}}</h2>
+        <p>{{user.age}} ans</p>
+        <p>{{user.adress}}</p>
+        <button class="button icon-left ion-ios-location button-positive button-small" ng-click="posUser({{user.position}})">Localiser</button> 
+        <a class="button icon-left ion-ios-person button-dark button-small" href="#/tab/profil/{{user.idUser}}">Voir le profil</a>
+      </ion-item>
+    </ion-content>
+  </div>
+</ion-view>
